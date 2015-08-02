@@ -1,0 +1,61 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+       <item name="android:actionBarStyle">@style/MyActionBar</item>
+       <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+    
+	<style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#FF6D12</item>
+ 		<item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+ 		<item name="android:height">60dp</item>
+  	</style>
+
+	  <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+	    <item name="android:textColor">#FFFFFF</item>
+	    <item name="android:textSize">30sp</item>
+	  </style>
+
+
+    <!-- ActionBar tabs text styles -->
+    <style name="MyActionBarTabText"
+           parent="@android:style/TextAppearance">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="MyNavigationDrawerTheme" parent="MaterialNavigationDrawerTheme.Light.DarkActionBar">
+        <item name="colorPrimary">#8bc34a</item>
+        <item name="colorPrimaryDark">#558b2f</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="singleAccount">true</item>
+    </style>
+
+    <style name="MySubheaderTheme">
+        <item name="subheaderTitleColor">#00F</item>
+    </style>
+
+    <style name="MySectionTheme" >
+        <item name="sectionColorIcon">#00F</item>
+        <item name="sectionColorText">#00F</item>
+        <item name="sectionColorNotification">#00F</item>
+        <item name="sectionBackgroundColorPressed">#160000FF</item>
+        <item name="sectionBackgroundColorSelected">#0A0000FF</item>
+        <item name="sectionBackgroundColor">#000000FF</item>
+    </style>
+</resources>

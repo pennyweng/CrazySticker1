@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">瘋貼圖</string>
+    <string name="title_section1">賺點數區</string>
+    <string name="title_section2">貼圖區</string>
+    <string name="title_section3">競標區</string>
+    <string name="title_section4">領取貼圖區</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">452744348218927</string>
+
+</resources>

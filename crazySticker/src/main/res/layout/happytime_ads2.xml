@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Button04"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="活動注意事項\n[瘋貼圖]保留對程式內各活動變更、修改、停止之權利，如遇意外或其他原因導致獎品發放困難，[瘋貼圖]有權隨時取消、暫停或終止活動，參加者絕無異議。一切未盡事宜，悉依[瘋貼圖]之說明或解釋為準。參加活動者於參加活動之同時，即視為同意接受[瘋貼圖]之各項規範，如有違反，[瘋貼圖]有權取消其領獎資格。※如不同意上述規則，請立刻按返回鍵離開。※"
+        android:textColor="#5E5E5E"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="#F57D14"
+            android:text="送出"
+            android:textColor="#FFFFFF" >
+        </Button>
+
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F57D14"
+            android:text="返回"
+            android:textColor="#FFFFFF" >
+        </Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:background="#000000"
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout02"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/editText2" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/LinearLayout02"
+            android:layout_below="@+id/textView1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="60dp" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#FFB300"
+                    android:textColor="#FFFFFF"
+                    android:text="影音廣告" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeLayout0"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" >
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:textColor="#5E5E5E"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:text="xx"
+        android:ems="10" >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:textColor="#5E5E5E"
+        android:textColorHint="#5E5E5E"
+        android:hint="請隨意說些好運的話吧"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/Button04"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:textSize="10dp"
+        android:background="#FF3333"
+        android:text="立即送出(扣50點)"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    </Button>
+
+</RelativeLayout>
